@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Talha Zubair | Portfolio</title>
+    <meta name="description" content="Portfolio of Muhammad Talha Zubair, a BSCS student, Frontend, and AI Developer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#home" class="header__logo" aria-label="Home">MTZ</a>
+            <nav class="nav" aria-label="Main Navigation">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <h1 id="hero-title" class="hero__title">
+                        Muhammad Talha Zubair
+                        <span class="hero__subtitle">— Frontend & AI Developer</span>
+                    </h1>
+                    <p class="hero__tagline">Building modern web applications and AI-powered tools that solve real-world problems.</p>
+                    <a href="#projects" class="btn btn--primary">View My Projects</a>
+                </div>
+                <div class="hero__image-wrapper">
+                    <picture>
+                        <source srcset="assets/profile.webp" type="image/webp">
+                        <img src="assets/profile.jpg" alt="Portrait of Muhammad Talha Zubair" class="hero__image" width="400" height="400">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section__title">About Me</h2>
+                <div class="about__content">
+                    <p class="about__text">I am a 2nd-semester BSCS student at NASTP Institute of Information Technology (NIIT), Lahore, Pakistan. I am passionate about frontend development, AI integration, and building full-stack tools.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" class="section__title">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item">HTML5</li>
+                    <li class="skills__item">CSS3 (Grid/Flexbox)</li>
+                    <li class="skills__item">JavaScript</li>
+                    <li class="skills__item">React</li>
+                    <li class="skills__item">Node.js</li>
+                    <li class="skills__item">Express</li>
+                    <li class="skills__item">C++</li>
+                    <li class="skills__item">Tailwind CSS</li>
+                    <li class="skills__item">Git/GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="section__title">Projects</h2>
+                <div class="projects__grid">
+                    <!-- Project 1 -->
+                    <article class="card">
+                        <div class="card__image-wrapper">
+                            <picture>
+                                <source srcset="assets/project-prompt.webp" type="image/webp">
+                                <img src="assets/project-prompt.jpg" alt="Screenshot of AI Prompt Engineering Studio" class="card__image" width="600" height="400" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">AI Prompt Engineering Studio</h3>
+                            <p class="card__description">React web app with Claude API integration for prompt experimentation.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="card">
+                        <div class="card__image-wrapper">
+                            <picture>
+                                <source srcset="assets/project-nexcpp.webp" type="image/webp">
+                                <img src="assets/project-nexcpp.jpg" alt="Screenshot of NexCPP Online Compiler" class="card__image" width="600" height="400" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">NexCPP</h3>
+                            <p class="card__description">A full-stack online C++ compiler built with Node.js, Express, SQLite, and Socket.io.</p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="card">
+                        <div class="card__image-wrapper">
+                            <picture>
+                                <source srcset="assets/project-dijkstra.webp" type="image/webp">
+                                <img src="assets/project-dijkstra.jpg" alt="Screenshot of Dijkstra Route Finder" class="card__image" width="600" height="400" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Dijkstra Route Finder</h3>
+                            <p class="card__description">An interactive route-finding visualizer with animated pathfinding.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section__title">Contact</h2>
+                <div class="contact__inner">
+                    <div class="contact__form-wrapper">
+                        <form class="form" action="#" method="POST">
+                            <div class="form__group">
+                                <label for="name" class="form__label">Name</label>
+                                <input type="text" id="name" name="name" class="form__input" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="email" class="form__label">Email</label>
+                                <input type="email" id="email" name="email" class="form__input" required>
+                            </div>
+                            <div class="form__group">
+                                <label for="message" class="form__label">Message</label>
+                                <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary">Send Message</button>
+                        </form>
+                    </div>
+                    <aside class="contact__social" aria-label="Social Links">
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="https://github.com/f2025cs024-star" target="_blank" rel="noopener noreferrer" class="social-list__link">
+                                    <span class="social-list__text">GitHub (f2025cs024-star)</span>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-list__link">
+                                    <span class="social-list__text">LinkedIn</span>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="mailto:mtalhazubair347@gmail.com" class="social-list__link">
+                                    <span class="social-list__text">mtalhazubair347@gmail.com</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__text">&copy; 2026 Muhammad Talha Zubair. All rights reserved.</p>
+            <div class="footer__socials">
+                <a href="https://github.com/f2025cs024-star" target="_blank" rel="noopener noreferrer" class="footer__icon-link" aria-label="GitHub">
+                    <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24">
+                        <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__icon-link" aria-label="LinkedIn">
+                    <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24">
+                        <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="mailto:mtalhazubair347@gmail.com" class="footer__icon-link" aria-label="Email">
+                    <svg class="footer__icon" viewBox="0 0 24 24" aria-hidden="true" width="24" height="24">
+                        <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
