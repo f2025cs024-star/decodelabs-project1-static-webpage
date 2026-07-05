@@ -15,7 +15,7 @@ A static personal developer portfolio website for Muhammad Talha Zubair, a BSCS 
 - **Cumulative Layout Shift (CLS) Prevention**: Images pre-defined with aspect ratios and fallback setups.
 
 ## Live Demo
-Live Demo: [add after deployment]
+Live Demo: [https://f2025cs024-star.github.io/decodelabs-project1-static-webpage/](https://f2025cs024-star.github.io/decodelabs-project1-static-webpage/)
 
 ## Developer Info
 - **GitHub**: [f2025cs024-star](https://github.com/f2025cs024-star)
