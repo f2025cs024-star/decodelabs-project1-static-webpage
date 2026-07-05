@@ -320,6 +320,16 @@ textarea:focus-visible {
     }
 }
 
+.hero__content {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hero__content {
+        text-align: left;
+    }
+}
+
 .hero__title {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -348,8 +358,14 @@ textarea:focus-visible {
 .hero__tagline {
     font-size: 1.1rem;
     color: var(--color-text-muted);
-    margin-bottom: var(--space-lg);
+    margin: 0 auto var(--space-lg);
     max-width: 600px;
+}
+
+@media (min-width: 768px) {
+    .hero__tagline {
+        margin: 0 0 var(--space-lg) 0;
+    }
 }
 
 .hero__image-wrapper {
